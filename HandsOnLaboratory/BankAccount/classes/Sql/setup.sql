@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS bankaccount;
+USE bankaccount;
+
+CREATE TABLE IF NOT EXISTS bankaccount (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    brand VARCHAR(150) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    registrationNumber VARCHAR(50) NOT NULL UNIQUE
+);
